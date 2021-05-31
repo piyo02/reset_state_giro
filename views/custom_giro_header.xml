@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="giro_custom_header_inherit">
+            <field name="name">vit.giro.form</field>
+            <field name="model">vit.giro</field>
+            <field name="inherit_id" ref="vit_giro.vit_giro_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//form//header" position="inside">
+                    <button name="reset_state" states="close" string="Reset State" type="object" class="oe_highlight"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
